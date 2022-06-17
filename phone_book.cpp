@@ -10,6 +10,7 @@ struct Contact
     int id;
 };
 
+int search(Contact[], int, string);
 int binary_search(int [], int, int, int);
 void bubble_sort(Contact [], int);
 void create_contact(Contact [], int);
