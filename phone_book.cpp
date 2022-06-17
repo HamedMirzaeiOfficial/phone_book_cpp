@@ -188,15 +188,7 @@ void sort_contacts(Contact contacts[], int index)
 {
     bubble_sort(contacts, index);
 
-    cout<<" ------------------------------------------------------------------------------\n";
-    cout<<"| ID   |  Contact firstname   |  Contact lastname    |  Contact number         |\n";
-    cout<<" ----- + -------------------- + -------------------- + ----------------------- +\n";
-
-    for(int i=0; i<index; i++)
-    {
-        cout<<"| "<<contacts[i].id<<"    | "<<contacts[i].first_name<<"                |   "<<contacts[i].last_name<<"            | "<<contacts[i].phone_number<<"           |\n";
-        cout<<" ----- + -------------------- + -------------------- + ----------------------- +\n";
-    }
+    show_contacts(contacts, index);
 }
 
 void menu()
